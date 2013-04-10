@@ -11,6 +11,7 @@ public class DeviznaTransakcija extends Transakcija implements Devizna {
 	private static final BigDecimal TECAJ_EUR_KN = new BigDecimal(7.5);
 	private static final String Podrzana_Valuta = "Euro";
 
+	// mora ti biti public da ju mozes pozvat u glavnoj klasi
 	private static void provjeriValutu(String valuta)
 			throws NepodrzanaValutaException {
 		if (Podrzana_Valuta.equals(valuta)) {
@@ -37,6 +38,10 @@ public class DeviznaTransakcija extends Transakcija implements Devizna {
 	public void provediTransakciju() {
 
 		if (polazniRacun.getStanjeRacuna().compareTo(super.iznosZaPrebaciti) == -1) {
+			// zamijenio si iznimke, NedozvoljenoStanjeRacunaException je RuntimeException
+			// a NepodrzanaValutaException je Exception
+			// dakle ovdje ne moras imat onaj throws u deklaraciji metode a u provjeriValutu 
+			// moras (ti je trenutno i imas tamo ali je nepotrebna momentalno)
 			throw new NedozvoljenoStanjeRacunaException(
 					"Nedovoljno sredstava na raèunu :"
 							+ polazniRacun.getStanjeRacuna()
