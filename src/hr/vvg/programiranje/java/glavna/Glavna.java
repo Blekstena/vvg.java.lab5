@@ -122,6 +122,8 @@ public class Glavna {
 			}
 			catch (NedozvoljenoStanjeRacunaException ex) {
 				error = true;
+				// malo l je a ne veliko L
+				// veliko znaci da zoves staticku metodu u Logger klasi (a ta metoda ne postoji, tj nije static)
 				Logger.error("Nedovoljno sredstava na raèunu za prebacivanje zeljenog iznosa!" + ex);
 			}
 		} while (error = true);
