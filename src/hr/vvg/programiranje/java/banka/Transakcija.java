@@ -1,5 +1,7 @@
 package hr.vvg.programiranje.java.banka;
 
+import hr.vvg.programiranje.java.iznimke.NedozvoljenoStanjeRacunaException;
+
 import java.math.BigDecimal;
 
 public class Transakcija {
@@ -31,7 +33,7 @@ public class Transakcija {
 	}
 
 	// metoda za transakciju
-	public void provediTransakciju() {
+	public void provediTransakciju() throws NedozvoljenoStanjeRacunaException {
 		polazniRacun.isplatiSRacuna(iznosZaPrebaciti);
 		dolazniRacun.uplatiNaRacun(iznosZaPrebaciti);
 	}

@@ -12,8 +12,8 @@ public class DeviznaTransakcija extends Transakcija implements Devizna {
 	private static final String Podrzana_Valuta = "Euro";
 
 	// mora ti biti public da ju mozes pozvat u glavnoj klasi
-	private static void provjeriValutu(String valuta)
-			throws NepodrzanaValutaException {
+	@SuppressWarnings("unused")
+	private static void provjeriValutu(String valuta){
 		if (Podrzana_Valuta.equals(valuta)) {
 			throw new NepodrzanaValutaException("unijeli ste valutu " + valuta
 					+ "koja nije podrzana.");
@@ -34,8 +34,8 @@ public class DeviznaTransakcija extends Transakcija implements Devizna {
 		} else
 			return iznosZaPrebaciti;
 	}
-	
-	public void provediTransakciju() {
+	@Override
+	public void provediTransakciju() throws NedozvoljenoStanjeRacunaException {
 
 		if (polazniRacun.getStanjeRacuna().compareTo(super.iznosZaPrebaciti) == -1) {
 			// zamijenio si iznimke, NedozvoljenoStanjeRacunaException je RuntimeException
