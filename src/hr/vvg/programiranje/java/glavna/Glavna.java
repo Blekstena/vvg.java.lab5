@@ -53,6 +53,7 @@ public class Glavna {
 			} catch (InputMismatchException ex) {
 				error = true;
 				logger.error("Unesen neispravan iznos za stanje prvog raèuna!" + stanjeRacuna1, ex);
+				unos.nextLine();
 				// imas beskonacnu petlju kad udjes u catch dio
 				// fali ti ovjde unos.nextLine();
 				// i u drugoj petlji dolje ti isto to fali
@@ -60,7 +61,7 @@ public class Glavna {
 			// ovdje ti pridruzujes true vrijednost u error
 			// a trebas usporedjivat
 			// i dolje isto to imas
-		} while (error = true);
+		} while (error == true);
 		TekuciRacun polazniRacun = new TekuciRacun(vlasnikRacuna1,
 				stanjeRacuna1, brojRacuna1);
 		
@@ -93,9 +94,10 @@ public class Glavna {
 			} catch (InputMismatchException ex) {
 				error = true;
 				logger.error("Unesen neispravan iznos za stanje prvog raèuna!" + stanjeRacuna2, ex);
+				unos.nextLine();
 
 			}
-		} while (error = true);
+		} while (error == true);
 		
 		System.out.print("Unesi iBan racuna: ");
 		String iban = unos.next();
@@ -114,9 +116,10 @@ public class Glavna {
 			} catch (NepodrzanaValutaException ex) {
 				error = true;
 				logger.error("Unesena pogresna valuta! Unesite ponovno. " + valuta, ex);
+				unos.nextLine();
 
 			}
-		} while (error = true);
+		} while (error == true);
 		
 
 		
@@ -139,11 +142,12 @@ public class Glavna {
 			}
 			catch (NedozvoljenoStanjeRacunaException ex) {
 				error = true;
+				unos.nextLine();
 				// malo l je a ne veliko L
 				// veliko znaci da zoves staticku metodu u Logger klasi (a ta metoda ne postoji, tj nije static)
 				logger.error("Nedovoljno sredstava na raèunu za prebacivanje zeljenog iznosa!" + ex);
 			}
-		} while (error = true);
+		} while (error == true);
 		unos.close();
 
 		System.out.println("Vlasnik prvog racuna:\nime:  "
