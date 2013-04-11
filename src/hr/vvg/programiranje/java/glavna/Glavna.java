@@ -11,7 +11,6 @@ import java.math.BigDecimal;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,9 +21,9 @@ public class Glavna {
 	public static void main(String[] args) {
 
 		Scanner unos = new Scanner(System.in);
-		
-		//podaci o prvom korisniku
-		
+
+		// podaci o prvom korisniku
+
 		System.out.print("Unesi ime prvog korisnika racuna: ");
 		String ime1 = unos.next();
 		logger.info("Uneseno ime vlasnika prvog raèuna: " + ime1);
@@ -35,10 +34,9 @@ public class Glavna {
 		String oib1 = unos.next();
 		logger.info("Unesen OIB vlasnika prvog raèuna: " + oib1);
 		Osoba vlasnikRacuna1 = new Osoba(ime1, prezime1, oib1);
-		
-		
-		//unos podataka o racunu prvog korisnika
-		
+
+		// unos podataka o racunu prvog korisnika
+
 		System.out.print("Unesi broj prvog racuna: ");
 		String brojRacuna1 = unos.next();
 		logger.info("Unesen broj vlasnika prvog raèuna: " + brojRacuna1);
@@ -52,7 +50,8 @@ public class Glavna {
 				logger.info("Uneseno stanje prvog raèuna: " + stanjeRacuna1);
 			} catch (InputMismatchException ex) {
 				error = true;
-				logger.error("Unesen neispravan iznos za stanje prvog raèuna!" + stanjeRacuna1, ex);
+				logger.error("Unesen neispravan iznos za stanje prvog raèuna!"
+						+ stanjeRacuna1, ex);
 				unos.nextLine();
 				// imas beskonacnu petlju kad udjes u catch dio
 				// fali ti ovjde unos.nextLine();
@@ -64,9 +63,9 @@ public class Glavna {
 		} while (error == true);
 		TekuciRacun polazniRacun = new TekuciRacun(vlasnikRacuna1,
 				stanjeRacuna1, brojRacuna1);
-		
-		//podaci o drugom korisniku
-		
+
+		// podaci o drugom korisniku
+
 		System.out.print("Unesi ime drugog korisnika racuna: ");
 		String ime2 = unos.next();
 		logger.info("Uneseno ime korisnika drugog raèuna: " + ime2);
@@ -77,13 +76,13 @@ public class Glavna {
 		String oib2 = unos.next();
 		logger.info("Unesen OIB korisnika drugog raèuna: " + oib2);
 		Osoba vlasnikRacuna2 = new Osoba(ime2, prezime2, oib2);
-		
-		//podavi o racunu drugog korisnika
-		
+
+		// podavi o racunu drugog korisnika
+
 		System.out.print("Unesi broj drugog racuna: ");
 		String brojRacuna2 = unos.next();
 		logger.info("Unesen broj drugog raèuna: " + brojRacuna2);
-		
+
 		BigDecimal stanjeRacuna2 = null;
 		do {
 			error = false;
@@ -93,38 +92,37 @@ public class Glavna {
 				logger.info("Uneseno stanje drugog raèuna: " + stanjeRacuna2);
 			} catch (InputMismatchException ex) {
 				error = true;
-				logger.error("Unesen neispravan iznos za stanje prvog raèuna!" + stanjeRacuna2, ex);
+				logger.error("Unesen neispravan iznos za stanje prvog raèuna!"
+						+ stanjeRacuna2, ex);
 				unos.nextLine();
 
 			}
 		} while (error == true);
-		
+
 		System.out.print("Unesi iBan racuna: ");
 		String iban = unos.next();
 		logger.info("Unesen iBan drugog raèuna: " + iban);
-		
-		
-		//valuta
-		
-		String valuta = null;;
+
+		// valuta
+
+		String valuta = null;
+		;
 		do {
 			error = false;
 			System.out.print("Unesi valutu drugog racuna: ");
 			try {
 				valuta = unos.next();
 				logger.info("Unesena valuta drugog raèuna: " + valuta);
+				DeviznaTransakcija.provjeriValutu(valuta);
 			} catch (NepodrzanaValutaException ex) {
 				error = true;
-				logger.error("Unesena pogresna valuta! Unesite ponovno. " + valuta, ex);
+				logger.error("Unesena pogresna valuta! Unesite ponovno. "
+						+ valuta, ex);
 				unos.nextLine();
 
 			}
 		} while (error == true);
-		
 
-		
-		
-		
 		DevizniRacun dolazniRacun = new DevizniRacun(vlasnikRacuna2,
 				stanjeRacuna2, iban, valuta, brojRacuna2);
 
@@ -133,19 +131,19 @@ public class Glavna {
 		logger.info("Unesen iznos transakcije: " + iznosZaPrebaciti);
 		DeviznaTransakcija transakcija = new DeviznaTransakcija(polazniRacun,
 				dolazniRacun, iznosZaPrebaciti);
-		
-		
-		do{
+
+		do {
 			error = false;
-			try{
-			transakcija.provediTransakciju();
-			}
-			catch (NedozvoljenoStanjeRacunaException ex) {
+			try {
+				transakcija.provediTransakciju();
+			} catch (NedozvoljenoStanjeRacunaException ex) {
 				error = true;
 				unos.nextLine();
 				// malo l je a ne veliko L
-				// veliko znaci da zoves staticku metodu u Logger klasi (a ta metoda ne postoji, tj nije static)
-				logger.error("Nedovoljno sredstava na raèunu za prebacivanje zeljenog iznosa!" + ex);
+				// veliko znaci da zoves staticku metodu u Logger klasi (a ta
+				// metoda ne postoji, tj nije static)
+				logger.error("Nedovoljno sredstava na raèunu za prebacivanje zeljenog iznosa!"
+						+ ex);
 			}
 		} while (error == true);
 		unos.close();

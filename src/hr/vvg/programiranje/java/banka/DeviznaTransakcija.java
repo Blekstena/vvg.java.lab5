@@ -12,9 +12,9 @@ public class DeviznaTransakcija extends Transakcija implements Devizna {
 	private static final String Podrzana_Valuta = "Euro";
 
 	// mora ti biti public da ju mozes pozvat u glavnoj klasi
-	@SuppressWarnings("unused")
-	private static void provjeriValutu(String valuta){
-		if (Podrzana_Valuta.equals(valuta)) {
+
+	public static void provjeriValutu(String valuta) {
+		if (Podrzana_Valuta.equals(valuta) == false) {
 			throw new NepodrzanaValutaException("unijeli ste valutu " + valuta
 					+ "koja nije podrzana.");
 		}
@@ -34,24 +34,27 @@ public class DeviznaTransakcija extends Transakcija implements Devizna {
 		} else
 			return iznosZaPrebaciti;
 	}
+
 	@Override
 	public void provediTransakciju() throws NedozvoljenoStanjeRacunaException {
 
 		if (polazniRacun.getStanjeRacuna().compareTo(super.iznosZaPrebaciti) == -1) {
-			// zamijenio si iznimke, NedozvoljenoStanjeRacunaException je RuntimeException
+			// zamijenio si iznimke, NedozvoljenoStanjeRacunaException je
+			// RuntimeException
 			// a NepodrzanaValutaException je Exception
-			// dakle ovdje ne moras imat onaj throws u deklaraciji metode a u provjeriValutu 
+			// dakle ovdje ne moras imat onaj throws u deklaraciji metode a u
+			// provjeriValutu
 			// moras (ti je trenutno i imas tamo ali je nepotrebna momentalno)
 			throw new NedozvoljenoStanjeRacunaException(
 					"Nedovoljno sredstava na raèunu :"
 							+ polazniRacun.getStanjeRacuna()
 							+ "; unesite ponovno iznos."
 							+ super.iznosZaPrebaciti);
-		}else {
-		polazniRacun.isplatiSRacuna(super.iznosZaPrebaciti);
-		BigDecimal konvertiraniIznos = mjenjacnica(super.iznosZaPrebaciti,
-				((DevizniRacun) dolazniRacun).getValuta());
-		dolazniRacun.uplatiNaRacun(konvertiraniIznos);
+		} else {
+			polazniRacun.isplatiSRacuna(super.iznosZaPrebaciti);
+			BigDecimal konvertiraniIznos = mjenjacnica(super.iznosZaPrebaciti,
+					((DevizniRacun) dolazniRacun).getValuta());
+			dolazniRacun.uplatiNaRacun(konvertiraniIznos);
 		}
 	}
 
