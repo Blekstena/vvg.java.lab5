@@ -53,8 +53,13 @@ public class Glavna {
 			} catch (InputMismatchException ex) {
 				error = true;
 				logger.error("Unesen neispravan iznos za stanje prvog raèuna!" + stanjeRacuna1, ex);
-
+				// imas beskonacnu petlju kad udjes u catch dio
+				// fali ti ovjde unos.nextLine();
+				// i u drugoj petlji dolje ti isto to fali
 			}
+			// ovdje ti pridruzujes true vrijednost u error
+			// a trebas usporedjivat
+			// i dolje isto to imas
 		} while (error = true);
 		TekuciRacun polazniRacun = new TekuciRacun(vlasnikRacuna1,
 				stanjeRacuna1, brojRacuna1);
