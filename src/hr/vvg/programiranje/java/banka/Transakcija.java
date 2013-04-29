@@ -38,6 +38,7 @@ public class Transakcija<T extends Racun, S extends Racun> {
 		dolazniRacun.uplatiNaRacun(iznosZaPrebaciti);
 	}
 
+	// ovako nabrzaka vidim da tu uvijek vracas null kad trazis iznos transakcije u glavnoj
 	public BigDecimal getIznosTransakcije() {
 		return null;
 	}
