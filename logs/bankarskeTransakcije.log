@@ -22,3 +22,413 @@ hr.vvg.programiranje.java.iznimke.NepodrzanaValutaException: unijeli ste valutu 
 	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:116) ~[bin/:na]
 2013-04-11 13:21:10,421 INFO [main] h.v.p.j.g.Glavna [Glavna.java:115] Unesena valuta drugog raèuna: Euro 
 2013-04-11 13:21:17,427 INFO [main] h.v.p.j.g.Glavna [Glavna.java:131] Unesen iznos transakcije: 1000 
+2013-04-12 10:56:35,089 INFO [main] h.v.p.j.g.Glavna [Glavna.java:30] Uneseno ime vlasnika prvog raèuna: IVO 
+2013-04-12 10:56:37,429 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno prezime vlasnika prvog raèuna: IVIC 
+2013-04-12 10:56:39,317 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Unesen OIB vlasnika prvog raèuna: 12431234 
+2013-04-12 10:56:41,189 INFO [main] h.v.p.j.g.Glavna [Glavna.java:46] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-12 10:56:44,275 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:59] Unesen neispravan iznos za stanje prvog raèuna!null 
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.next(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.nextBigDecimal(Unknown Source) ~[na:1.7.0_17]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:55) ~[bin/:na]
+2013-04-12 10:56:47,399 INFO [main] h.v.p.j.g.Glavna [Glavna.java:56] Uneseno stanje prvog raèuna: 9000 
+2013-04-12 10:56:50,022 INFO [main] h.v.p.j.g.Glavna [Glavna.java:77] Uneseno ime korisnika drugog raèuna: MIRO 
+2013-04-12 10:56:52,166 INFO [main] h.v.p.j.g.Glavna [Glavna.java:81] Uneseno prezime korisnika drugog raèuna: MIRIC 
+2013-04-12 10:56:54,886 INFO [main] h.v.p.j.g.Glavna [Glavna.java:85] Unesen OIB korisnika drugog raèuna: 1242354234 
+2013-04-12 10:56:57,142 INFO [main] h.v.p.j.g.Glavna [Glavna.java:93] Unesen broj drugog raèuna: 22 
+2013-04-12 10:57:01,078 INFO [main] h.v.p.j.g.Glavna [Glavna.java:101] Uneseno stanje drugog raèuna: 80 
+2013-04-12 10:57:02,854 INFO [main] h.v.p.j.g.Glavna [Glavna.java:113] Unesen iBan drugog raèuna: 1243234 
+2013-04-12 10:57:14,775 INFO [main] h.v.p.j.g.Glavna [Glavna.java:123] Unesena valuta drugog raèuna: EURO 
+2013-04-12 10:57:14,777 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:127] Unesena pogresna valuta! Unesite ponovno. EURO 
+hr.vvg.programiranje.java.iznimke.NepodrzanaValutaException: unijeli ste valutu EURO koja nije podrzana.
+	at hr.vvg.programiranje.java.banka.DeviznaTransakcija.provjeriValutu(DeviznaTransakcija.java:18) ~[bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:124) ~[bin/:na]
+2013-04-12 10:57:20,407 INFO [main] h.v.p.j.g.Glavna [Glavna.java:123] Unesena valuta drugog raèuna: Euro 
+2013-04-12 10:57:26,283 INFO [main] h.v.p.j.g.Glavna [Glavna.java:139] Unesen iznos transakcije: 999 
+2013-04-12 10:57:47,117 INFO [main] h.v.p.j.g.Glavna [Glavna.java:30] Uneseno ime vlasnika prvog raèuna: IVO 
+2013-04-12 10:57:48,488 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno prezime vlasnika prvog raèuna: IVIC 
+2013-04-12 10:57:49,800 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Unesen OIB vlasnika prvog raèuna: 1432 
+2013-04-12 10:57:51,610 INFO [main] h.v.p.j.g.Glavna [Glavna.java:46] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-12 10:57:55,339 INFO [main] h.v.p.j.g.Glavna [Glavna.java:56] Uneseno stanje prvog raèuna: 100 
+2013-04-12 10:57:57,977 INFO [main] h.v.p.j.g.Glavna [Glavna.java:77] Uneseno ime korisnika drugog raèuna: MIRO 
+2013-04-12 10:57:59,849 INFO [main] h.v.p.j.g.Glavna [Glavna.java:81] Uneseno prezime korisnika drugog raèuna: MRIIC 
+2013-04-12 10:58:02,184 INFO [main] h.v.p.j.g.Glavna [Glavna.java:85] Unesen OIB korisnika drugog raèuna: 32423 
+2013-04-12 10:58:03,769 INFO [main] h.v.p.j.g.Glavna [Glavna.java:93] Unesen broj drugog raèuna: 22 
+2013-04-12 10:58:08,297 INFO [main] h.v.p.j.g.Glavna [Glavna.java:101] Uneseno stanje drugog raèuna: 80 
+2013-04-12 10:58:09,817 INFO [main] h.v.p.j.g.Glavna [Glavna.java:113] Unesen iBan drugog raèuna: 1234 
+2013-04-12 10:58:14,794 INFO [main] h.v.p.j.g.Glavna [Glavna.java:123] Unesena valuta drugog raèuna: Euro 
+2013-04-12 10:58:24,858 INFO [main] h.v.p.j.g.Glavna [Glavna.java:139] Unesen iznos transakcije: 101 
+2013-04-12 10:58:24,859 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:153] Nedovoljno sredstava na raèunu za prebacivanje zeljenog iznosa!hr.vvg.programiranje.java.iznimke.NedozvoljenoStanjeRacunaException: Nedovoljno sredstava na raèunu :100; unesite ponovno iznos.101 
+2013-04-12 10:58:27,994 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:153] Nedovoljno sredstava na raèunu za prebacivanje zeljenog iznosa!hr.vvg.programiranje.java.iznimke.NedozvoljenoStanjeRacunaException: Nedovoljno sredstava na raèunu :100; unesite ponovno iznos.101 
+2013-04-12 10:58:28,602 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:153] Nedovoljno sredstava na raèunu za prebacivanje zeljenog iznosa!hr.vvg.programiranje.java.iznimke.NedozvoljenoStanjeRacunaException: Nedovoljno sredstava na raèunu :100; unesite ponovno iznos.101 
+2013-04-12 10:58:31,594 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:153] Nedovoljno sredstava na raèunu za prebacivanje zeljenog iznosa!hr.vvg.programiranje.java.iznimke.NedozvoljenoStanjeRacunaException: Nedovoljno sredstava na raèunu :100; unesite ponovno iznos.101 
+2013-04-12 10:58:31,994 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:153] Nedovoljno sredstava na raèunu za prebacivanje zeljenog iznosa!hr.vvg.programiranje.java.iznimke.NedozvoljenoStanjeRacunaException: Nedovoljno sredstava na raèunu :100; unesite ponovno iznos.101 
+2013-04-12 11:11:11,901 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Aplikacija pokrenuta! 
+2013-04-12 11:11:16,284 INFO [main] h.v.p.j.g.Glavna [Glavna.java:40] Uneseno ime vlasnika prvog raèuna: ivo 
+2013-04-12 11:11:18,747 INFO [main] h.v.p.j.g.Glavna [Glavna.java:43] Uneseno prezime vlasnika prvog raèuna: ivic 
+2013-04-12 11:11:20,715 INFO [main] h.v.p.j.g.Glavna [Glavna.java:46] Unesen oib vlasnika prvog raèuna: 1234123 
+2013-04-12 11:11:22,955 INFO [main] h.v.p.j.g.Glavna [Glavna.java:49] Unesen broj racuna prvog raèuna: 11 
+2013-04-12 11:11:27,245 INFO [main] h.v.p.j.g.Glavna [Glavna.java:136] Uneseno stanje racuna prve osobe: 100 
+2013-04-12 11:11:29,707 INFO [main] h.v.p.j.g.Glavna [Glavna.java:67] Uneseno ime vlasnika drugog raèuna: miro 
+2013-04-12 11:11:32,475 INFO [main] h.v.p.j.g.Glavna [Glavna.java:70] Uneseno prezime vlasnika drugog raèuna: miric 
+2013-04-12 11:11:35,628 INFO [main] h.v.p.j.g.Glavna [Glavna.java:73] Unesen oib vlasnika drugog raèuna: 123423541234 
+2013-04-12 11:11:37,980 INFO [main] h.v.p.j.g.Glavna [Glavna.java:76] Unesen IBAN drugog raèuna: 12344 
+2013-04-12 11:11:41,602 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:161] unijeli ste valutu euro koja nije podrzana. 
+hr.vvg.programiranje.java.iznimke.NepodrzanaValutaException: unijeli ste valutu euro koja nije podrzana.
+	at hr.vvg.programiranje.java.banka.DeviznaTransakcija.provjeriValutu(DeviznaTransakcija.java:18) ~[bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.unesiValjanuValutu(Glavna.java:156) [bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:80) [bin/:na]
+2013-04-12 11:11:53,309 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:161] unijeli ste valutu EURO koja nije podrzana. 
+hr.vvg.programiranje.java.iznimke.NepodrzanaValutaException: unijeli ste valutu EURO koja nije podrzana.
+	at hr.vvg.programiranje.java.banka.DeviznaTransakcija.provjeriValutu(DeviznaTransakcija.java:18) ~[bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.unesiValjanuValutu(Glavna.java:156) [bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:80) [bin/:na]
+2013-04-12 11:11:56,909 INFO [main] h.v.p.j.g.Glavna [Glavna.java:158] Unesena valuta racuna druge osobe: Euro 
+2013-04-12 11:11:59,933 INFO [main] h.v.p.j.g.Glavna [Glavna.java:136] Uneseno stanje racuna druge osobe: 100 
+2013-04-12 11:12:06,717 INFO [main] h.v.p.j.g.Glavna [Glavna.java:98] Unesen iznos (KN) koji zelimo prebaciti s prvog racuna na drugi: 150 
+2013-04-12 11:12:06,718 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:114] Nedovoljno sredstava na raèunu :100; unesite ponovno iznos.150 
+hr.vvg.programiranje.java.iznimke.NedozvoljenoStanjeRacunaException: Nedovoljno sredstava na raèunu :100; unesite ponovno iznos.150
+	at hr.vvg.programiranje.java.banka.DeviznaTransakcija.provediTransakciju(DeviznaTransakcija.java:48) ~[bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:108) ~[bin/:na]
+2013-04-12 11:13:17,674 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Aplikacija pokrenuta! 
+2013-04-12 11:13:21,281 INFO [main] h.v.p.j.g.Glavna [Glavna.java:40] Uneseno ime vlasnika prvog raèuna: xcg 
+2013-04-12 11:13:22,336 INFO [main] h.v.p.j.g.Glavna [Glavna.java:43] Uneseno prezime vlasnika prvog raèuna: sfg 
+2013-04-12 11:13:23,633 INFO [main] h.v.p.j.g.Glavna [Glavna.java:46] Unesen oib vlasnika prvog raèuna: sg 
+2013-04-12 11:13:26,097 INFO [main] h.v.p.j.g.Glavna [Glavna.java:49] Unesen broj racuna prvog raèuna: sg 
+2013-04-12 11:13:27,895 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:139] Unesen neispravan iznos za stanje prvog raèuna! 
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.next(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.nextBigDecimal(Unknown Source) ~[na:1.7.0_17]
+	at hr.vvg.programiranje.java.glavna.Glavna.unesiValjaniIznos(Glavna.java:134) [bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:53) [bin/:na]
+2013-04-12 11:13:32,994 INFO [main] h.v.p.j.g.Glavna [Glavna.java:136] Uneseno stanje racuna prve osobe: 100 
+2013-04-12 11:13:34,706 INFO [main] h.v.p.j.g.Glavna [Glavna.java:67] Uneseno ime vlasnika drugog raèuna: dzh 
+2013-04-12 11:13:35,393 INFO [main] h.v.p.j.g.Glavna [Glavna.java:70] Uneseno prezime vlasnika drugog raèuna: shdg 
+2013-04-12 11:13:36,193 INFO [main] h.v.p.j.g.Glavna [Glavna.java:73] Unesen oib vlasnika drugog raèuna: sgh 
+2013-04-12 11:13:37,249 INFO [main] h.v.p.j.g.Glavna [Glavna.java:76] Unesen IBAN drugog raèuna: sgh 
+2013-04-12 11:13:38,802 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:161] unijeli ste valutu sgh koja nije podrzana. 
+hr.vvg.programiranje.java.iznimke.NepodrzanaValutaException: unijeli ste valutu sgh koja nije podrzana.
+	at hr.vvg.programiranje.java.banka.DeviznaTransakcija.provjeriValutu(DeviznaTransakcija.java:18) ~[bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.unesiValjanuValutu(Glavna.java:156) [bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:80) [bin/:na]
+2013-04-12 11:13:42,065 INFO [main] h.v.p.j.g.Glavna [Glavna.java:158] Unesena valuta racuna druge osobe: Euro 
+2013-04-12 11:13:45,058 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:139] Unesen neispravan iznos za stanje drugog raèuna! 
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.next(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.nextBigDecimal(Unknown Source) ~[na:1.7.0_17]
+	at hr.vvg.programiranje.java.glavna.Glavna.unesiValjaniIznos(Glavna.java:134) [bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:84) [bin/:na]
+2013-04-12 11:13:48,913 INFO [main] h.v.p.j.g.Glavna [Glavna.java:136] Uneseno stanje racuna druge osobe: 34 
+2013-04-12 11:13:54,098 INFO [main] h.v.p.j.g.Glavna [Glavna.java:98] Unesen iznos (KN) koji zelimo prebaciti s prvog racuna na drugi: 101 
+2013-04-12 11:13:54,099 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:114] Nedovoljno sredstava na raèunu :100; unesite ponovno iznos.101 
+hr.vvg.programiranje.java.iznimke.NedozvoljenoStanjeRacunaException: Nedovoljno sredstava na raèunu :100; unesite ponovno iznos.101
+	at hr.vvg.programiranje.java.banka.DeviznaTransakcija.provediTransakciju(DeviznaTransakcija.java:48) ~[bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:108) ~[bin/:na]
+2013-04-12 11:14:09,601 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Aplikacija pokrenuta! 
+2013-04-12 11:14:11,939 INFO [main] h.v.p.j.g.Glavna [Glavna.java:40] Uneseno ime vlasnika prvog raèuna: sdgf 
+2013-04-12 11:14:12,450 INFO [main] h.v.p.j.g.Glavna [Glavna.java:43] Uneseno prezime vlasnika prvog raèuna: sg 
+2013-04-12 11:14:12,994 INFO [main] h.v.p.j.g.Glavna [Glavna.java:46] Unesen oib vlasnika prvog raèuna: fadg 
+2013-04-12 11:14:13,491 INFO [main] h.v.p.j.g.Glavna [Glavna.java:49] Unesen broj racuna prvog raèuna: ag 
+2013-04-12 11:14:15,321 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:139] Unesen neispravan iznos za stanje prvog raèuna! 
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.next(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.nextBigDecimal(Unknown Source) ~[na:1.7.0_17]
+	at hr.vvg.programiranje.java.glavna.Glavna.unesiValjaniIznos(Glavna.java:134) [bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:53) [bin/:na]
+2013-04-12 11:14:17,605 INFO [main] h.v.p.j.g.Glavna [Glavna.java:136] Uneseno stanje racuna prve osobe: 100 
+2013-04-12 11:14:18,979 INFO [main] h.v.p.j.g.Glavna [Glavna.java:67] Uneseno ime vlasnika drugog raèuna: sg 
+2013-04-12 11:14:19,443 INFO [main] h.v.p.j.g.Glavna [Glavna.java:70] Uneseno prezime vlasnika drugog raèuna: fga 
+2013-04-12 11:14:20,019 INFO [main] h.v.p.j.g.Glavna [Glavna.java:73] Unesen oib vlasnika drugog raèuna: adg 
+2013-04-12 11:14:20,435 INFO [main] h.v.p.j.g.Glavna [Glavna.java:76] Unesen IBAN drugog raèuna: adfg 
+2013-04-12 11:14:20,900 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:161] unijeli ste valutu adg koja nije podrzana. 
+hr.vvg.programiranje.java.iznimke.NepodrzanaValutaException: unijeli ste valutu adg koja nije podrzana.
+	at hr.vvg.programiranje.java.banka.DeviznaTransakcija.provjeriValutu(DeviznaTransakcija.java:18) ~[bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.unesiValjanuValutu(Glavna.java:156) [bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:80) [bin/:na]
+2013-04-12 11:14:29,171 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:161] unijeli ste valutu aEuro koja nije podrzana. 
+hr.vvg.programiranje.java.iznimke.NepodrzanaValutaException: unijeli ste valutu aEuro koja nije podrzana.
+	at hr.vvg.programiranje.java.banka.DeviznaTransakcija.provjeriValutu(DeviznaTransakcija.java:18) ~[bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.unesiValjanuValutu(Glavna.java:156) [bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:80) [bin/:na]
+2013-04-12 11:14:33,252 INFO [main] h.v.p.j.g.Glavna [Glavna.java:158] Unesena valuta racuna druge osobe: Euro 
+2013-04-12 11:14:36,020 INFO [main] h.v.p.j.g.Glavna [Glavna.java:136] Uneseno stanje racuna druge osobe: 90 
+2013-04-12 11:14:40,596 INFO [main] h.v.p.j.g.Glavna [Glavna.java:98] Unesen iznos (KN) koji zelimo prebaciti s prvog racuna na drugi: 100 
+2013-04-12 11:14:40,596 INFO [main] h.v.p.j.g.Glavna [Glavna.java:111] Transakcija uspjesno provedena! 
+2013-04-12 11:23:26,726 INFO [main] h.v.p.j.g.Glavna [Glavna.java:30] Uneseno ime vlasnika prvog raèuna: ivo 
+2013-04-12 11:23:28,241 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno prezime vlasnika prvog raèuna: ivic 
+2013-04-12 11:23:30,481 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Unesen OIB vlasnika prvog raèuna: 12431234 
+2013-04-12 11:23:32,401 INFO [main] h.v.p.j.g.Glavna [Glavna.java:46] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-12 11:23:35,891 INFO [main] h.v.p.j.g.Glavna [Glavna.java:56] Uneseno stanje prvog raèuna: 900 
+2013-04-12 11:23:38,304 INFO [main] h.v.p.j.g.Glavna [Glavna.java:77] Uneseno ime korisnika drugog raèuna: miro 
+2013-04-12 11:23:40,080 INFO [main] h.v.p.j.g.Glavna [Glavna.java:81] Uneseno prezime korisnika drugog raèuna: miric 
+2013-04-12 11:23:42,001 INFO [main] h.v.p.j.g.Glavna [Glavna.java:85] Unesen OIB korisnika drugog raèuna: 123423 
+2013-04-12 11:23:43,743 INFO [main] h.v.p.j.g.Glavna [Glavna.java:93] Unesen broj drugog raèuna: 22 
+2013-04-12 11:23:46,382 INFO [main] h.v.p.j.g.Glavna [Glavna.java:101] Uneseno stanje drugog raèuna: 100 
+2013-04-12 11:23:48,030 INFO [main] h.v.p.j.g.Glavna [Glavna.java:113] Unesen iBan drugog raèuna: 12312 
+2013-04-12 11:23:51,808 INFO [main] h.v.p.j.g.Glavna [Glavna.java:123] Unesena valuta drugog raèuna: euro 
+2013-04-12 11:23:51,814 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:127] Unesena pogresna valuta! Unesite ponovno. euro 
+hr.vvg.programiranje.java.iznimke.NepodrzanaValutaException: unijeli ste valutu euro koja nije podrzana.
+	at hr.vvg.programiranje.java.banka.DeviznaTransakcija.provjeriValutu(DeviznaTransakcija.java:18) ~[bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:124) ~[bin/:na]
+2013-04-12 11:23:56,989 INFO [main] h.v.p.j.g.Glavna [Glavna.java:123] Unesena valuta drugog raèuna: EURO 
+2013-04-12 11:23:56,989 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:127] Unesena pogresna valuta! Unesite ponovno. EURO 
+hr.vvg.programiranje.java.iznimke.NepodrzanaValutaException: unijeli ste valutu EURO koja nije podrzana.
+	at hr.vvg.programiranje.java.banka.DeviznaTransakcija.provjeriValutu(DeviznaTransakcija.java:18) ~[bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:124) ~[bin/:na]
+2013-04-12 11:24:02,444 INFO [main] h.v.p.j.g.Glavna [Glavna.java:123] Unesena valuta drugog raèuna: Euro 
+2013-04-12 11:24:05,324 INFO [main] h.v.p.j.g.Glavna [Glavna.java:139] Unesen iznos transakcije: 100 
+2013-04-12 14:18:43,638 INFO [main] h.v.p.j.g.Glavna [Glavna.java:30] Uneseno ime vlasnika prvog raèuna: ivo 
+2013-04-12 14:18:47,441 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno prezime vlasnika prvog raèuna: ivic 
+2013-04-12 14:18:48,897 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Unesen OIB vlasnika prvog raèuna: 231234 
+2013-04-12 14:18:51,841 INFO [main] h.v.p.j.g.Glavna [Glavna.java:46] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-12 14:18:54,039 INFO [main] h.v.p.j.g.Glavna [Glavna.java:56] Uneseno stanje prvog raèuna: 900 
+2013-04-12 14:18:56,561 INFO [main] h.v.p.j.g.Glavna [Glavna.java:79] Uneseno ime korisnika drugog raèuna: miro 
+2013-04-12 14:18:58,497 INFO [main] h.v.p.j.g.Glavna [Glavna.java:83] Uneseno prezime korisnika drugog raèuna: miric 
+2013-04-12 14:19:00,400 INFO [main] h.v.p.j.g.Glavna [Glavna.java:87] Unesen OIB korisnika drugog raèuna: 2341 
+2013-04-12 14:19:03,008 INFO [main] h.v.p.j.g.Glavna [Glavna.java:95] Unesen broj drugog raèuna: 22 
+2013-04-12 14:19:05,504 INFO [main] h.v.p.j.g.Glavna [Glavna.java:103] Uneseno stanje drugog raèuna: 90 
+2013-04-12 14:19:07,408 INFO [main] h.v.p.j.g.Glavna [Glavna.java:115] Unesen iBan drugog raèuna: 2341234 
+2013-04-12 14:19:13,184 INFO [main] h.v.p.j.g.Glavna [Glavna.java:125] Unesena valuta drugog raèuna: Euro 
+2013-04-12 14:19:20,991 INFO [main] h.v.p.j.g.Glavna [Glavna.java:141] Unesen iznos transakcije: 400 
+2013-04-12 14:19:20,992 INFO [main] h.v.p.j.g.Glavna [Glavna.java:150] Uspješna transakcija. 
+2013-04-12 14:19:49,650 INFO [main] h.v.p.j.g.Glavna [Glavna.java:30] Uneseno ime vlasnika prvog raèuna: ivo 
+2013-04-12 14:19:51,118 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno prezime vlasnika prvog raèuna: ivic 
+2013-04-12 14:19:52,093 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Unesen OIB vlasnika prvog raèuna: 124234 
+2013-04-12 14:19:53,933 INFO [main] h.v.p.j.g.Glavna [Glavna.java:46] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-12 14:19:56,160 INFO [main] h.v.p.j.g.Glavna [Glavna.java:56] Uneseno stanje prvog raèuna: 900 
+2013-04-12 14:19:59,885 INFO [main] h.v.p.j.g.Glavna [Glavna.java:79] Uneseno ime korisnika drugog raèuna: miro 
+2013-04-12 14:20:01,757 INFO [main] h.v.p.j.g.Glavna [Glavna.java:83] Uneseno prezime korisnika drugog raèuna: miric 
+2013-04-12 14:20:03,101 INFO [main] h.v.p.j.g.Glavna [Glavna.java:87] Unesen OIB korisnika drugog raèuna: 12431234 
+2013-04-12 14:20:06,093 INFO [main] h.v.p.j.g.Glavna [Glavna.java:95] Unesen broj drugog raèuna: 22 
+2013-04-12 14:20:08,727 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:106] Unesen neispravan iznos za stanje drugog raèuna!null 
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.next(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.nextBigDecimal(Unknown Source) ~[na:1.7.0_17]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:102) ~[bin/:na]
+2013-04-12 14:20:10,685 INFO [main] h.v.p.j.g.Glavna [Glavna.java:103] Uneseno stanje drugog raèuna: 90 
+2013-04-12 14:20:12,156 INFO [main] h.v.p.j.g.Glavna [Glavna.java:115] Unesen iBan drugog raèuna: 123412 
+2013-04-12 14:20:13,820 INFO [main] h.v.p.j.g.Glavna [Glavna.java:125] Unesena valuta drugog raèuna: sdg 
+2013-04-12 14:20:13,822 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:129] Unesena pogresna valuta! Unesite ponovno. sdg 
+hr.vvg.programiranje.java.iznimke.NepodrzanaValutaException: unijeli ste valutu sdg koja nije podrzana.
+	at hr.vvg.programiranje.java.banka.DeviznaTransakcija.provjeriValutu(DeviznaTransakcija.java:18) ~[bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:126) ~[bin/:na]
+2013-04-12 14:20:16,732 INFO [main] h.v.p.j.g.Glavna [Glavna.java:125] Unesena valuta drugog raèuna: Euro 
+2013-04-12 14:20:21,452 INFO [main] h.v.p.j.g.Glavna [Glavna.java:141] Unesen iznos transakcije: 901 
+2013-04-12 14:20:21,453 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:153] Nedovoljno sredstava na raèunu :900; unesite ponovno iznos.901 
+hr.vvg.programiranje.java.iznimke.NedozvoljenoStanjeRacunaException: Nedovoljno sredstava na raèunu :900; unesite ponovno iznos.901
+	at hr.vvg.programiranje.java.banka.DeviznaTransakcija.provediTransakciju(DeviznaTransakcija.java:48) ~[bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:147) ~[bin/:na]
+2013-04-12 14:25:47,565 INFO [main] h.v.p.j.g.Glavna [Glavna.java:30] Uneseno ime vlasnika prvog raèuna: ivo 
+2013-04-12 14:25:49,145 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno prezime vlasnika prvog raèuna: ivic 
+2013-04-12 14:25:50,713 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Unesen OIB vlasnika prvog raèuna: 123423 
+2013-04-12 14:25:52,265 INFO [main] h.v.p.j.g.Glavna [Glavna.java:46] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-12 14:25:53,791 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:59] Unesen neispravan iznos za stanje prvog raèuna!null 
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.next(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.nextBigDecimal(Unknown Source) ~[na:1.7.0_17]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:55) ~[bin/:na]
+2013-04-12 14:25:55,691 INFO [main] h.v.p.j.g.Glavna [Glavna.java:56] Uneseno stanje prvog raèuna: 900 
+2013-04-12 14:25:57,689 INFO [main] h.v.p.j.g.Glavna [Glavna.java:79] Uneseno ime korisnika drugog raèuna: miro 
+2013-04-12 14:25:59,401 INFO [main] h.v.p.j.g.Glavna [Glavna.java:83] Uneseno prezime korisnika drugog raèuna: miric 
+2013-04-12 14:26:00,936 INFO [main] h.v.p.j.g.Glavna [Glavna.java:87] Unesen OIB korisnika drugog raèuna: 12342354 
+2013-04-12 14:26:02,232 INFO [main] h.v.p.j.g.Glavna [Glavna.java:95] Unesen broj drugog raèuna: 22 
+2013-04-12 14:26:03,753 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:106] Unesen neispravan iznos za stanje drugog raèuna!null 
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.next(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.nextBigDecimal(Unknown Source) ~[na:1.7.0_17]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:102) ~[bin/:na]
+2013-04-12 14:26:07,288 INFO [main] h.v.p.j.g.Glavna [Glavna.java:103] Uneseno stanje drugog raèuna: 90 
+2013-04-12 14:26:09,080 INFO [main] h.v.p.j.g.Glavna [Glavna.java:115] Unesen iBan drugog raèuna: 1235425 
+2013-04-12 14:26:12,968 INFO [main] h.v.p.j.g.Glavna [Glavna.java:125] Unesena valuta drugog raèuna: Euro 
+2013-04-12 14:26:18,232 INFO [main] h.v.p.j.g.Glavna [Glavna.java:141] Unesen iznos transakcije: 800 
+2013-04-12 14:26:18,232 INFO [main] h.v.p.j.g.Glavna [Glavna.java:150] Uspješna transakcija. 
+2013-04-12 14:26:28,907 INFO [main] h.v.p.j.g.Glavna [Glavna.java:30] Uneseno ime vlasnika prvog raèuna: ivo 
+2013-04-12 14:26:30,215 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno prezime vlasnika prvog raèuna: ivic 
+2013-04-12 14:26:31,207 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Unesen OIB vlasnika prvog raèuna: 239461 
+2013-04-12 14:26:32,279 INFO [main] h.v.p.j.g.Glavna [Glavna.java:46] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-12 14:26:34,329 INFO [main] h.v.p.j.g.Glavna [Glavna.java:56] Uneseno stanje prvog raèuna: 900 
+2013-04-12 14:26:36,374 INFO [main] h.v.p.j.g.Glavna [Glavna.java:79] Uneseno ime korisnika drugog raèuna: miro 
+2013-04-12 14:26:37,798 INFO [main] h.v.p.j.g.Glavna [Glavna.java:83] Uneseno prezime korisnika drugog raèuna: miric 
+2013-04-12 14:26:39,542 INFO [main] h.v.p.j.g.Glavna [Glavna.java:87] Unesen OIB korisnika drugog raèuna: 1234123142 
+2013-04-12 14:26:44,134 INFO [main] h.v.p.j.g.Glavna [Glavna.java:95] Unesen broj drugog raèuna: 22 
+2013-04-12 14:26:45,846 INFO [main] h.v.p.j.g.Glavna [Glavna.java:103] Uneseno stanje drugog raèuna: 90 
+2013-04-12 14:26:47,478 INFO [main] h.v.p.j.g.Glavna [Glavna.java:115] Unesen iBan drugog raèuna: 124234 
+2013-04-12 14:26:49,478 INFO [main] h.v.p.j.g.Glavna [Glavna.java:125] Unesena valuta drugog raèuna: Euro 
+2013-04-12 14:26:58,037 INFO [main] h.v.p.j.g.Glavna [Glavna.java:141] Unesen iznos transakcije: 901 
+2013-04-12 14:26:58,043 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:153] Nedovoljno sredstava na raèunu :900; unesite ponovno iznos.901 
+hr.vvg.programiranje.java.iznimke.NedozvoljenoStanjeRacunaException: Nedovoljno sredstava na raèunu :900; unesite ponovno iznos.901
+	at hr.vvg.programiranje.java.banka.DeviznaTransakcija.provediTransakciju(DeviznaTransakcija.java:48) ~[bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:147) ~[bin/:na]
+2013-04-12 14:29:17,586 INFO [main] h.v.p.j.g.Glavna [Glavna.java:30] Uneseno ime vlasnika prvog raèuna: ivo 
+2013-04-12 14:29:18,957 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno prezime vlasnika prvog raèuna: ivic 
+2013-04-12 14:29:20,477 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Unesen OIB vlasnika prvog raèuna: 1242354 
+2013-04-12 14:29:22,333 INFO [main] h.v.p.j.g.Glavna [Glavna.java:46] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-12 14:29:24,303 INFO [main] h.v.p.j.g.Glavna [Glavna.java:56] Uneseno stanje prvog raèuna: 900 
+2013-04-12 14:29:27,213 INFO [main] h.v.p.j.g.Glavna [Glavna.java:79] Uneseno ime korisnika drugog raèuna: miro 
+2013-04-12 14:29:28,733 INFO [main] h.v.p.j.g.Glavna [Glavna.java:83] Uneseno prezime korisnika drugog raèuna: miric 
+2013-04-12 14:29:29,789 INFO [main] h.v.p.j.g.Glavna [Glavna.java:87] Unesen OIB korisnika drugog raèuna: 12341423 
+2013-04-12 14:29:31,212 INFO [main] h.v.p.j.g.Glavna [Glavna.java:95] Unesen broj drugog raèuna: 22 
+2013-04-12 14:29:33,276 INFO [main] h.v.p.j.g.Glavna [Glavna.java:103] Uneseno stanje drugog raèuna: 90 
+2013-04-12 14:29:34,876 INFO [main] h.v.p.j.g.Glavna [Glavna.java:115] Unesen iBan drugog raèuna: 124235 
+2013-04-12 14:29:38,204 INFO [main] h.v.p.j.g.Glavna [Glavna.java:125] Unesena valuta drugog raèuna: Euro 
+2013-04-12 14:29:42,284 INFO [main] h.v.p.j.g.Glavna [Glavna.java:141] Unesen iznos transakcije: 901 
+2013-04-12 14:29:42,290 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:153] Nedovoljno sredstava na raèunu :900; unesite ponovno iznos.901 
+hr.vvg.programiranje.java.iznimke.NedozvoljenoStanjeRacunaException: Nedovoljno sredstava na raèunu :900; unesite ponovno iznos.901
+	at hr.vvg.programiranje.java.banka.DeviznaTransakcija.provediTransakciju(DeviznaTransakcija.java:48) ~[bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:147) ~[bin/:na]
+2013-04-15 13:08:43,882 INFO [main] h.v.p.j.g.Glavna [Glavna.java:30] Uneseno ime vlasnika prvog raèuna: ivo 
+2013-04-15 13:08:45,326 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno prezime vlasnika prvog raèuna: ivivc 
+2013-04-15 13:08:47,073 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Unesen OIB vlasnika prvog raèuna: 1235423523 
+2013-04-15 13:08:48,446 INFO [main] h.v.p.j.g.Glavna [Glavna.java:46] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-15 13:08:51,809 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:59] Unesen neispravan iznos za stanje prvog raèuna!null 
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.next(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.nextBigDecimal(Unknown Source) ~[na:1.7.0_17]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:55) ~[bin/:na]
+2013-04-15 13:08:53,549 INFO [main] h.v.p.j.g.Glavna [Glavna.java:56] Uneseno stanje prvog raèuna: 900 
+2013-04-15 13:08:56,593 INFO [main] h.v.p.j.g.Glavna [Glavna.java:79] Uneseno ime korisnika drugog raèuna: miro 
+2013-04-15 13:08:59,039 INFO [main] h.v.p.j.g.Glavna [Glavna.java:83] Uneseno prezime korisnika drugog raèuna: miric 
+2013-04-15 13:09:01,183 INFO [main] h.v.p.j.g.Glavna [Glavna.java:87] Unesen OIB korisnika drugog raèuna: 2394823490 
+2013-04-15 13:09:03,214 INFO [main] h.v.p.j.g.Glavna [Glavna.java:95] Unesen broj drugog raèuna: 22 
+2013-04-15 13:09:05,119 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:106] Unesen neispravan iznos za stanje drugog raèuna!null 
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.next(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.nextBigDecimal(Unknown Source) ~[na:1.7.0_17]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:102) ~[bin/:na]
+2013-04-15 13:09:07,183 INFO [main] h.v.p.j.g.Glavna [Glavna.java:103] Uneseno stanje drugog raèuna: 90 
+2013-04-15 13:09:08,975 INFO [main] h.v.p.j.g.Glavna [Glavna.java:115] Unesen iBan drugog raèuna: 234523 
+2013-04-15 13:09:13,023 INFO [main] h.v.p.j.g.Glavna [Glavna.java:125] Unesena valuta drugog raèuna: Eur 
+2013-04-15 13:09:13,048 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:129] Unesena pogresna valuta! Unesite ponovno. Eur 
+hr.vvg.programiranje.java.iznimke.NepodrzanaValutaException: unijeli ste valutu Eur koja nije podrzana.
+	at hr.vvg.programiranje.java.banka.DeviznaTransakcija.provjeriValutu(DeviznaTransakcija.java:18) ~[bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:126) ~[bin/:na]
+2013-04-15 13:09:15,151 INFO [main] h.v.p.j.g.Glavna [Glavna.java:125] Unesena valuta drugog raèuna: Euro 
+2013-04-15 13:09:19,424 INFO [main] h.v.p.j.g.Glavna [Glavna.java:141] Unesen iznos transakcije: 900 
+2013-04-15 13:09:19,424 INFO [main] h.v.p.j.g.Glavna [Glavna.java:150] Uspješna transakcija. 
+2013-04-29 11:11:32,161 INFO [main] h.v.p.j.g.Glavna [Glavna.java:30] Uneseno ime vlasnika prvog raèuna: ivo 
+2013-04-29 11:11:34,651 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno prezime vlasnika prvog raèuna: ivic 
+2013-04-29 11:11:36,315 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Unesen OIB vlasnika prvog raèuna: 12312 
+2013-04-29 11:11:37,931 INFO [main] h.v.p.j.g.Glavna [Glavna.java:46] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-29 11:11:40,608 INFO [main] h.v.p.j.g.Glavna [Glavna.java:56] Uneseno stanje prvog raèuna: 9000 
+2013-04-29 11:11:43,115 INFO [main] h.v.p.j.g.Glavna [Glavna.java:79] Uneseno ime korisnika drugog raèuna: miro 
+2013-04-29 11:11:44,811 INFO [main] h.v.p.j.g.Glavna [Glavna.java:83] Uneseno prezime korisnika drugog raèuna: miric 
+2013-04-29 11:11:46,602 INFO [main] h.v.p.j.g.Glavna [Glavna.java:87] Unesen OIB korisnika drugog raèuna: 12213 
+2013-04-29 11:11:47,930 INFO [main] h.v.p.j.g.Glavna [Glavna.java:95] Unesen broj drugog raèuna: 11 
+2013-04-29 11:11:50,474 INFO [main] h.v.p.j.g.Glavna [Glavna.java:103] Uneseno stanje drugog raèuna: 900 
+2013-04-29 11:11:52,842 INFO [main] h.v.p.j.g.Glavna [Glavna.java:115] Unesen iBan drugog raèuna: 12312 
+2013-04-29 11:11:56,586 INFO [main] h.v.p.j.g.Glavna [Glavna.java:125] Unesena valuta drugog raèuna: euro 
+2013-04-29 11:11:56,625 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:129] Unesena pogresna valuta! Unesite ponovno. euro 
+hr.vvg.programiranje.java.iznimke.NepodrzanaValutaException: unijeli ste valutu euro koja nije podrzana.
+	at hr.vvg.programiranje.java.banka.DeviznaTransakcija.provjeriValutu(DeviznaTransakcija.java:18) ~[bin/:na]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:126) ~[bin/:na]
+2013-04-29 11:11:59,594 INFO [main] h.v.p.j.g.Glavna [Glavna.java:125] Unesena valuta drugog raèuna: Euro 
+2013-04-29 11:12:02,297 INFO [main] h.v.p.j.g.Glavna [Glavna.java:141] Unesen iznos transakcije: 900 
+2013-04-29 11:12:02,298 INFO [main] h.v.p.j.g.Glavna [Glavna.java:150] Uspješna transakcija. 
+2013-04-29 12:45:00,257 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno ime vlasnika prvog raèuna: ivo 
+2013-04-29 12:45:02,094 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Uneseno prezime vlasnika prvog raèuna: ivic 
+2013-04-29 12:45:04,062 INFO [main] h.v.p.j.g.Glavna [Glavna.java:42] Unesen OIB vlasnika prvog raèuna: 23423 
+2013-04-29 12:45:06,271 INFO [main] h.v.p.j.g.Glavna [Glavna.java:50] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-29 12:45:09,105 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:63] Unesen neispravan iznos za stanje prvog raèuna!null 
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.next(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.nextBigDecimal(Unknown Source) ~[na:1.7.0_17]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:59) ~[bin/:na]
+2013-04-29 12:45:11,486 INFO [main] h.v.p.j.g.Glavna [Glavna.java:60] Uneseno stanje prvog raèuna: 9000 
+2013-04-29 12:45:14,688 INFO [main] h.v.p.j.g.Glavna [Glavna.java:78] Uneseno ime korisnika drugog raèuna: miro 
+2013-04-29 12:45:16,048 INFO [main] h.v.p.j.g.Glavna [Glavna.java:82] Uneseno prezime korisnika drugog raèuna: miric 
+2013-04-29 12:45:18,032 INFO [main] h.v.p.j.g.Glavna [Glavna.java:86] Unesen OIB korisnika drugog raèuna: 324234 
+2013-04-29 12:45:19,328 INFO [main] h.v.p.j.g.Glavna [Glavna.java:94] Unesen broj drugog raèuna: 22 
+2013-04-29 12:45:21,184 INFO [main] h.v.p.j.g.Glavna [Glavna.java:102] Uneseno stanje drugog raèuna: 900 
+2013-04-29 12:45:23,279 INFO [main] h.v.p.j.g.Glavna [Glavna.java:114] Unesen iBan drugog raèuna: 2342345 
+2013-04-29 12:45:26,785 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:136] Unešena je krivo valuta racuna,  
+2013-04-29 12:45:37,681 INFO [main] h.v.p.j.g.Glavna [Glavna.java:147] Unesen iznos transakcije: 5000 
+2013-04-29 12:46:05,078 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno ime vlasnika prvog raèuna: ivo 
+2013-04-29 12:46:06,642 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Uneseno prezime vlasnika prvog raèuna: ivic 
+2013-04-29 12:46:09,458 INFO [main] h.v.p.j.g.Glavna [Glavna.java:42] Unesen OIB vlasnika prvog raèuna: 124234 
+2013-04-29 12:46:12,418 INFO [main] h.v.p.j.g.Glavna [Glavna.java:50] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-29 12:46:15,781 INFO [main] h.v.p.j.g.Glavna [Glavna.java:60] Uneseno stanje prvog raèuna: 9000 
+2013-04-29 12:46:18,194 INFO [main] h.v.p.j.g.Glavna [Glavna.java:78] Uneseno ime korisnika drugog raèuna: miro 
+2013-04-29 12:46:20,466 INFO [main] h.v.p.j.g.Glavna [Glavna.java:82] Uneseno prezime korisnika drugog raèuna: miric 
+2013-04-29 12:46:21,682 INFO [main] h.v.p.j.g.Glavna [Glavna.java:86] Unesen OIB korisnika drugog raèuna: 123423 
+2013-04-29 12:46:23,586 INFO [main] h.v.p.j.g.Glavna [Glavna.java:94] Unesen broj drugog raèuna: 22 
+2013-04-29 12:46:27,715 INFO [main] h.v.p.j.g.Glavna [Glavna.java:102] Uneseno stanje drugog raèuna: 5000 
+2013-04-29 12:46:29,315 INFO [main] h.v.p.j.g.Glavna [Glavna.java:114] Unesen iBan drugog raèuna: 23423 
+2013-04-29 12:46:39,043 INFO [main] h.v.p.j.g.Glavna [Glavna.java:147] Unesen iznos transakcije: 1000 
+2013-04-29 12:47:34,025 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno ime vlasnika prvog raèuna: ivo 
+2013-04-29 12:47:35,750 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Uneseno prezime vlasnika prvog raèuna: ivic 
+2013-04-29 12:47:37,349 INFO [main] h.v.p.j.g.Glavna [Glavna.java:42] Unesen OIB vlasnika prvog raèuna: 234234 
+2013-04-29 12:47:38,454 INFO [main] h.v.p.j.g.Glavna [Glavna.java:50] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-29 12:47:40,456 INFO [main] h.v.p.j.g.Glavna [Glavna.java:60] Uneseno stanje prvog raèuna: 900 
+2013-04-29 12:47:42,981 INFO [main] h.v.p.j.g.Glavna [Glavna.java:78] Uneseno ime korisnika drugog raèuna: miro 
+2013-04-29 12:47:44,229 INFO [main] h.v.p.j.g.Glavna [Glavna.java:82] Uneseno prezime korisnika drugog raèuna: miric 
+2013-04-29 12:47:45,430 INFO [main] h.v.p.j.g.Glavna [Glavna.java:86] Unesen OIB korisnika drugog raèuna: 23412323 
+2013-04-29 12:47:46,358 INFO [main] h.v.p.j.g.Glavna [Glavna.java:94] Unesen broj drugog raèuna: 22 
+2013-04-29 12:47:50,486 INFO [main] h.v.p.j.g.Glavna [Glavna.java:102] Uneseno stanje drugog raèuna: 1 
+2013-04-29 12:47:53,270 INFO [main] h.v.p.j.g.Glavna [Glavna.java:114] Unesen iBan drugog raèuna: 23423 
+2013-04-29 12:47:57,499 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:136] Unešena je krivo valuta racuna,  
+2013-04-29 12:48:03,030 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:136] Unešena je krivo valuta racuna,  
+2013-04-29 12:48:12,071 INFO [main] h.v.p.j.g.Glavna [Glavna.java:147] Unesen iznos transakcije: 0 
+2013-04-29 13:00:16,282 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno ime vlasnika prvog raèuna: ivo 
+2013-04-29 13:00:17,398 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Uneseno prezime vlasnika prvog raèuna: ivic 
+2013-04-29 13:00:18,790 INFO [main] h.v.p.j.g.Glavna [Glavna.java:42] Unesen OIB vlasnika prvog raèuna: 12312 
+2013-04-29 13:00:19,654 INFO [main] h.v.p.j.g.Glavna [Glavna.java:50] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-29 13:00:23,176 INFO [main] h.v.p.j.g.Glavna [Glavna.java:60] Uneseno stanje prvog raèuna: 9000 
+2013-04-29 13:00:25,255 INFO [main] h.v.p.j.g.Glavna [Glavna.java:78] Uneseno ime korisnika drugog raèuna: miro 
+2013-04-29 13:00:26,983 INFO [main] h.v.p.j.g.Glavna [Glavna.java:82] Uneseno prezime korisnika drugog raèuna: miric 
+2013-04-29 13:00:27,655 INFO [main] h.v.p.j.g.Glavna [Glavna.java:86] Unesen OIB korisnika drugog raèuna: 1234 
+2013-04-29 13:00:28,439 INFO [main] h.v.p.j.g.Glavna [Glavna.java:94] Unesen broj drugog raèuna: 22 
+2013-04-29 13:00:30,759 INFO [main] h.v.p.j.g.Glavna [Glavna.java:102] Uneseno stanje drugog raèuna: 100 
+2013-04-29 13:00:32,486 INFO [main] h.v.p.j.g.Glavna [Glavna.java:114] Unesen iBan drugog raèuna: 213 
+2013-04-29 13:00:42,695 INFO [main] h.v.p.j.g.Glavna [Glavna.java:147] Unesen iznos transakcije: 100 
+2013-04-29 13:02:23,007 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno ime vlasnika prvog raèuna: ivo 
+2013-04-29 13:02:24,155 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Uneseno prezime vlasnika prvog raèuna: ivic 
+2013-04-29 13:02:25,580 INFO [main] h.v.p.j.g.Glavna [Glavna.java:42] Unesen OIB vlasnika prvog raèuna: 23423 
+2013-04-29 13:02:26,908 INFO [main] h.v.p.j.g.Glavna [Glavna.java:50] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-29 13:02:29,678 INFO [main] h.v.p.j.g.Glavna [Glavna.java:60] Uneseno stanje prvog raèuna: 9000 
+2013-04-29 13:02:31,996 INFO [main] h.v.p.j.g.Glavna [Glavna.java:78] Uneseno ime korisnika drugog raèuna: miro 
+2013-04-29 13:02:34,171 INFO [main] h.v.p.j.g.Glavna [Glavna.java:82] Uneseno prezime korisnika drugog raèuna: miric 
+2013-04-29 13:02:35,884 INFO [main] h.v.p.j.g.Glavna [Glavna.java:86] Unesen OIB korisnika drugog raèuna: 23423 
+2013-04-29 13:02:37,164 INFO [main] h.v.p.j.g.Glavna [Glavna.java:94] Unesen broj drugog raèuna: 22 
+2013-04-29 13:02:39,394 ERROR [main] h.v.p.j.g.Glavna [Glavna.java:105] Unesen neispravan iznos za stanje drugog raèuna!null 
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.next(Unknown Source) ~[na:1.7.0_17]
+	at java.util.Scanner.nextBigDecimal(Unknown Source) ~[na:1.7.0_17]
+	at hr.vvg.programiranje.java.glavna.Glavna.main(Glavna.java:101) ~[bin/:na]
+2013-04-29 13:02:44,573 INFO [main] h.v.p.j.g.Glavna [Glavna.java:102] Uneseno stanje drugog raèuna: 100 
+2013-04-29 13:02:46,205 INFO [main] h.v.p.j.g.Glavna [Glavna.java:114] Unesen iBan drugog raèuna: 234 
+2013-04-29 13:02:55,565 INFO [main] h.v.p.j.g.Glavna [Glavna.java:147] Unesen iznos transakcije: 100 
+2013-04-29 13:03:19,490 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno ime vlasnika prvog raèuna: ivo 
+2013-04-29 13:03:20,190 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Uneseno prezime vlasnika prvog raèuna: asdfsda 
+2013-04-29 13:03:21,646 INFO [main] h.v.p.j.g.Glavna [Glavna.java:42] Unesen OIB vlasnika prvog raèuna: 12312 
+2013-04-29 13:03:22,431 INFO [main] h.v.p.j.g.Glavna [Glavna.java:50] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-29 13:03:24,384 INFO [main] h.v.p.j.g.Glavna [Glavna.java:60] Uneseno stanje prvog raèuna: 900 
+2013-04-29 13:03:27,230 INFO [main] h.v.p.j.g.Glavna [Glavna.java:78] Uneseno ime korisnika drugog raèuna: idfg 
+2013-04-29 13:03:29,358 INFO [main] h.v.p.j.g.Glavna [Glavna.java:82] Uneseno prezime korisnika drugog raèuna: sdfasadfg 
+2013-04-29 13:03:33,582 INFO [main] h.v.p.j.g.Glavna [Glavna.java:86] Unesen OIB korisnika drugog raèuna: 123412 
+2013-04-29 13:03:35,087 INFO [main] h.v.p.j.g.Glavna [Glavna.java:94] Unesen broj drugog raèuna: 22 
+2013-04-29 13:03:38,303 INFO [main] h.v.p.j.g.Glavna [Glavna.java:102] Uneseno stanje drugog raèuna: 20 
+2013-04-29 13:03:39,583 INFO [main] h.v.p.j.g.Glavna [Glavna.java:114] Unesen iBan drugog raèuna: 123 
+2013-04-29 13:03:46,303 INFO [main] h.v.p.j.g.Glavna [Glavna.java:147] Unesen iznos transakcije: 90 
+2013-04-29 13:04:50,166 INFO [main] h.v.p.j.g.Glavna [Glavna.java:34] Uneseno ime vlasnika prvog raèuna: ivo 
+2013-04-29 13:04:51,266 INFO [main] h.v.p.j.g.Glavna [Glavna.java:38] Uneseno prezime vlasnika prvog raèuna: ivic 
+2013-04-29 13:04:53,057 INFO [main] h.v.p.j.g.Glavna [Glavna.java:42] Unesen OIB vlasnika prvog raèuna: 12312 
+2013-04-29 13:04:54,193 INFO [main] h.v.p.j.g.Glavna [Glavna.java:50] Unesen broj vlasnika prvog raèuna: 11 
+2013-04-29 13:04:56,020 INFO [main] h.v.p.j.g.Glavna [Glavna.java:60] Uneseno stanje prvog raèuna: 900 
+2013-04-29 13:04:58,210 INFO [main] h.v.p.j.g.Glavna [Glavna.java:78] Uneseno ime korisnika drugog raèuna: miro 
+2013-04-29 13:04:59,794 INFO [main] h.v.p.j.g.Glavna [Glavna.java:82] Uneseno prezime korisnika drugog raèuna: miric 
+2013-04-29 13:05:01,202 INFO [main] h.v.p.j.g.Glavna [Glavna.java:86] Unesen OIB korisnika drugog raèuna: 31212 
+2013-04-29 13:05:03,154 INFO [main] h.v.p.j.g.Glavna [Glavna.java:94] Unesen broj drugog raèuna: 22 
+2013-04-29 13:05:05,187 INFO [main] h.v.p.j.g.Glavna [Glavna.java:102] Uneseno stanje drugog raèuna: 10 
+2013-04-29 13:05:06,851 INFO [main] h.v.p.j.g.Glavna [Glavna.java:114] Unesen iBan drugog raèuna: 12312 
+2013-04-29 13:05:16,675 INFO [main] h.v.p.j.g.Glavna [Glavna.java:147] Unesen iznos transakcije: 100 

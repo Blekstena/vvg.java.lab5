@@ -4,6 +4,6 @@ import java.math.BigDecimal;
 
 public interface Devizna {
 	
-	BigDecimal mjenjacnica(BigDecimal polazniIznosKN, String valuta);
+	BigDecimal mjenjacnica(BigDecimal polazniIznosKN, Valuta valuta);
 
 }

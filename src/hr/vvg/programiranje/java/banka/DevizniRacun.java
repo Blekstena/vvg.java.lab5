@@ -7,10 +7,10 @@ import java.math.BigDecimal;
 public class DevizniRacun extends Racun {
 	
 	private String iban;
-	private String valuta;
+	private Valuta valuta;
 	private String brojRacuna;
 	
-	public DevizniRacun(Osoba vlasnikRacuna, BigDecimal stanjeRacuna, String iban, String valuta, String brojRacuna){
+	public DevizniRacun(Osoba vlasnikRacuna, BigDecimal stanjeRacuna, String iban, Valuta valuta, String brojRacuna){
 		super(vlasnikRacuna, stanjeRacuna);
 		this.iban = iban;
 		this.valuta = valuta;
@@ -24,7 +24,7 @@ public class DevizniRacun extends Racun {
 		return iban;
 	}
 
-	public String getValuta() {
+	public Valuta getValuta() {
 		return valuta;
 	}
 

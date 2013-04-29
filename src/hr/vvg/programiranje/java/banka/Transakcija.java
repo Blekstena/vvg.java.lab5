@@ -38,4 +38,8 @@ public class Transakcija {
 		dolazniRacun.uplatiNaRacun(iznosZaPrebaciti);
 	}
 
+	public BigDecimal getIznosTransakcije() {
+		return null;
+	}
+
 }

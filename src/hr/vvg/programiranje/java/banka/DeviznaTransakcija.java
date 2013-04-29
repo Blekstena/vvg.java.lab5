@@ -8,43 +8,43 @@ import java.math.RoundingMode;
 
 public class DeviznaTransakcija extends Transakcija implements Devizna {
 
-	private static final BigDecimal TECAJ_EUR_KN = new BigDecimal(7.5);
-	private static final String Podrzana_Valuta = "Euro";
+	//private static final BigDecimal TECAJ_EUR_KN = new BigDecimal(7.5);
+	//private static final String PODRZANA_VALUTA = "Euro";
 
 	// mora ti biti public da ju mozes pozvat u glavnoj klasi
-
-	public static void provjeriValutu(String valuta) {
-		if (Podrzana_Valuta.equals(valuta) == false) {
-			throw new NepodrzanaValutaException("unijeli ste valutu " + valuta
-					+ "koja nije podrzana.");
-		}
-	}
+	
 
 	public DeviznaTransakcija(TekuciRacun polazniRacun,
 			DevizniRacun dolazniRacun, BigDecimal iznosZaPrebaciti) {
 		super(polazniRacun, dolazniRacun, iznosZaPrebaciti);
 	}
 
-	public BigDecimal mjenjacnica(BigDecimal iznosZaPrebaciti, String valuta) {
+	public static Valuta provjeriValutu(String valuta)
+			throws NepodrzanaValutaException {
+		try {
+			return Valuta.valueOf(valuta);
+		} catch (IllegalArgumentException ex) {
+			throw new NepodrzanaValutaException("Valuta " + valuta
+					+ " nije podržana!", ex);
+		}
+	}
 
-		if ("EURO".equals(valuta) || "euro".equals(valuta)) {
-			BigDecimal iznos = iznosZaPrebaciti.divide(TECAJ_EUR_KN, 2,
-					RoundingMode.HALF_UP);
-			return iznos;
-		} else
-			return iznosZaPrebaciti;
+	public BigDecimal mjenjacnica(BigDecimal polazniIznosKN, Valuta valuta) {
+		for (Tecaj tecaj : Tecajnica.dohvatiTecajeve()) {
+			if (tecaj.getValuta().compareTo(valuta) == 0) {
+				BigDecimal iznos = polazniIznosKN.divide(
+						tecaj.getTecajPremaKuni(), 2, RoundingMode.HALF_UP);
+				return iznos;
+			}
+		}
+		return polazniIznosKN;
 	}
 
 	@Override
 	public void provediTransakciju() throws NedozvoljenoStanjeRacunaException {
 
 		if (polazniRacun.getStanjeRacuna().compareTo(super.iznosZaPrebaciti) == -1) {
-			// zamijenio si iznimke, NedozvoljenoStanjeRacunaException je
-			// RuntimeException
-			// a NepodrzanaValutaException je Exception
-			// dakle ovdje ne moras imat onaj throws u deklaraciji metode a u
-			// provjeriValutu
-			// moras (ti je trenutno i imas tamo ali je nepotrebna momentalno)
+
 			throw new NedozvoljenoStanjeRacunaException(
 					"Nedovoljno sredstava na raèunu :"
 							+ polazniRacun.getStanjeRacuna()
