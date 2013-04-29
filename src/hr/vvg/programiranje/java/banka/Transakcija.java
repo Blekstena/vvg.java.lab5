@@ -4,14 +4,14 @@ import hr.vvg.programiranje.java.iznimke.NedozvoljenoStanjeRacunaException;
 
 import java.math.BigDecimal;
 
-public class Transakcija {
+public class Transakcija<T extends Racun, S extends Racun> {
 
-	protected Racun polazniRacun;
-	protected Racun dolazniRacun;
+	protected T polazniRacun;
+	protected S dolazniRacun;
 	BigDecimal iznosZaPrebaciti;
 
 	// konstruktor
-	public Transakcija(Racun polazniRacun, Racun dolazniRacun,
+	public Transakcija(T polazniRacun, S dolazniRacun,
 			BigDecimal iznosZaPrebaciti) {
 
 		this.polazniRacun = polazniRacun;

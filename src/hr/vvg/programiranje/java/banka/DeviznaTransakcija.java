@@ -6,16 +6,16 @@ import hr.vvg.programiranje.java.iznimke.NepodrzanaValutaException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public class DeviznaTransakcija extends Transakcija implements Devizna {
+public class DeviznaTransakcija<T extends TekuciRacun, S extends DevizniRacun>
+		extends Transakcija<T, S> implements Devizna {
 
-	//private static final BigDecimal TECAJ_EUR_KN = new BigDecimal(7.5);
-	//private static final String PODRZANA_VALUTA = "Euro";
+	// private static final BigDecimal TECAJ_EUR_KN = new BigDecimal(7.5);
+	// private static final String PODRZANA_VALUTA = "Euro";
 
 	// mora ti biti public da ju mozes pozvat u glavnoj klasi
-	
 
-	public DeviznaTransakcija(TekuciRacun polazniRacun,
-			DevizniRacun dolazniRacun, BigDecimal iznosZaPrebaciti) {
+	public DeviznaTransakcija(T polazniRacun,
+			S dolazniRacun, BigDecimal iznosZaPrebaciti) {
 		super(polazniRacun, dolazniRacun, iznosZaPrebaciti);
 	}
 
